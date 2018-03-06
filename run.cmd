@@ -1,4 +1,4 @@
-docker stop fabric.machinelearning.basos
+docker stop fabric.machinelearning.baseos
 docker rm fabric.machinelearning.baseos
 
 docker pull healthcatalyst/fabric.docker.centos.tomcat:latest

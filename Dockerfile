@@ -1,5 +1,4 @@
 FROM centos:centos7
-MAINTAINER Health Catalyst <imran.qureshi@healthcatalyst.com>
 
 ## Set a default user. Available via runtime flag `--user docker` 
 ## Add user to 'staff' group, granting them write privileges to /usr/local/lib/R/site.library
@@ -71,3 +70,5 @@ ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 RUN node --version
+
+RUN rm -rf /var/cache/yum
